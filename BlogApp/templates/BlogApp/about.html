@@ -1,0 +1,33 @@
+{% extends 'BlogApp/template.html' %}
+
+{% block content %}
+
+<div class="w3-panel w3-padding-16 w3-center w3-topbar w3-bottombar w3-border-red w3-round">
+    <h1>About</h1>
+</div>
+
+
+<div class="w3-container w3-round-large w3-padding-16 w3-margin-top w3-margin-bottom">
+    <div class="w3-card-4 w3-margin-top">
+        <header class="w3-container">
+            <h1>About me:</h1>
+        </header>
+        <div class="w3-container">
+            <h3>¡Entusiasta en el mundo de la programación!</h3>
+            <h4>Mi nombre es Sele, soy estudiante de Conservación y restauración de bienes culturales. 
+                Desde la secundaria estuve interesada en programación y ahora estoy realizando distintos cursos para tener más herramientas para el futuro. 
+                ¡Muy emocionada por seguir creciendo!
+
+            </h4>
+            <h4>Este blog es parte del desafío final del curso de Python de CoderHouse, donde hemos visto el framework de aplicaciones web open-source Django.</h4>
+        </div>
+</div>
+
+
+<!-- Botones -->
+<div class="w3-bar w3-padding-32 w3-center">
+    <a button type="button" class="w3-button w3-round-large w3-large w3-black" href=" {% url 'blogapp:Home' %} ">Return to Home</button></a>
+</div>
+
+
+{% endblock %}
